@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Make You Remember</string>
+    <string name="search_here">Tìm kiếm...</string>
+    <string name="it_s_time_to">Đã đến lúc</string>
+    <string name="key">Từ khóa</string>
+    <string name="value">Giá trị</string>
+    <string name="key_here">Từ khóa...</string>
+    <string name="value_here">Giá trị...</string>
+    <string name="description_here">Mô tả...</string>
+    <string name="pick_color">Chọn màu</string>
+    <string name="nothing_here">Không gì ở đây cả</string>
+    <string name="click_the_green_button">Nhấn vào nút màu xanh</string>
+    <string name="delete_note">Xóa ghi chú</string>
+    <string name="are_you_sure_you_want_to_delete_this_note">Bạn có chắc chắn muốn xóa ghi chú này?</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="key_not_empty">Từ khóa không được để trống</string>
+    <string name="value_not_empty">Giá trị không được để trống</string>
+    <string name="languages">Ngôn ngữ</string>
+    <string name="additional_values">Bổ sung</string>
+    <string name="add_image">Thêm ảnh</string>
+    <string name="trash_note">Xóa ghi chú</string>
+    <string name="remember">Đã nhớ</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="trash">Thùng rác</string>
+    <string name="about_me">Về tôi và ứng dụng</string>
+    <string name="you_remembered">BẠN ĐÃ NHỚ</string>
+    <string name="favorite_title">YÊU THÍCH</string>
+    <string name="trash_title">THÙNG RÁC</string>
+    <string name="about_me_title">VỀ TÔI</string>
+    <string name="about">Chào mọi người. Tôi là một lập trình viên Java đang làm việc và sống tại Việt Nam (TP.HCM).</string>
+    <string name="about_this_app">VỀ ỨNG DỤNG</string>
+    <string name="about_app_1">Ứng dụng này sẽ giúp bạn ghi nhớ những gì mà bạn đã ghi chú bằng hệ thống trả lời câu hỏi (Quiz System)</string>
+    <string name="about_app_3">Đây là ứng dụng đầu tiên của tôi. Mong mọi người sẽ thích và đánh giá.</string>
+    <string name="about_app2">Nếu bạn trả lời không chính xác, bạn sẽ phải xem quảng cáo như là một hình phạt và cũng là hình thức mà bạn ủng hộ tôi :))</string>
+    <string name="email_thanhnhahuynh1509_gmail_com">Email: thanhnhahuynh1509@gmail.com</string>
+    <string name="question">Câu hỏi</string>
+    <string name="finish">Kết thúc</string>
+    <string name="continue_text">Tiếp tục</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+
+</resources>

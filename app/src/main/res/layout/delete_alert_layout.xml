@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layoutDeleteNoteContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15sdp"
+    android:background="@drawable/background_alert">
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/ic_delete"
+        app:tint="@color/color_text"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_note"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/linotte_bold"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_text"
+        app:layout_constraintStart_toEndOf="@id/imgDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgDelete"
+        app:layout_constraintBottom_toBottomOf="@id/imgDelete"/>
+
+    <TextView
+        android:id="@+id/textAlert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/are_you_sure_you_want_to_delete_this_note"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/linotte_regular"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_text"
+        app:layout_constraintTop_toBottomOf="@id/imgDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/btnTextDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/delete"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/linotte_bold"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_note_bg_1"
+        android:gravity="center_vertical"
+
+        app:layout_constraintTop_toBottomOf="@id/textAlert"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/btnTextCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:text="@string/cancel"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/linotte_bold"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_note_bg_4"
+        android:gravity="center_vertical"
+
+        app:layout_constraintTop_toBottomOf="@id/textAlert"
+        app:layout_constraintEnd_toStartOf="@id/btnTextDelete"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

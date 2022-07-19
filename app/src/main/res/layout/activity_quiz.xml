@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="@dimen/_15sdp"
+    tools:context=".activities.QuizActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+
+        android:minHeight="@dimen/_100sdp"
+        android:background="@drawable/bg_quiz"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:elevation="@dimen/_2sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imgQuestion"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:visibility="gone"
+            android:src="@drawable/h2"
+            android:layout_marginEnd="@dimen/_10sdp"
+           />
+
+        <TextView
+            android:id="@+id/textQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text"
+            android:fontFamily="@font/linotte_bold"
+            android:textSize="@dimen/_16ssp"
+            android:includeFontPadding="false"
+            android:text="Prerequisites?"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/color_text"
+        app:layout_constraintTop_toBottomOf="@id/layoutQuestion"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/btnAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:minHeight="@dimen/_50sdp"
+                android:background="@drawable/bg_quiz"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:fontFamily="@font/linotte_regular"
+                    android:textSize="@dimen/_14ssp"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:text="Prerequisites ?"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:minHeight="@dimen/_50sdp"
+                android:background="@drawable/bg_quiz"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/btnAnswer1"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:fontFamily="@font/linotte_regular"
+                    android:textSize="@dimen/_14ssp"
+                    android:includeFontPadding="false"
+                    android:text="Prerequisites ?"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:minHeight="@dimen/_50sdp"
+                android:background="@drawable/bg_quiz"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/btnAnswer2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:fontFamily="@font/linotte_regular"
+                    android:textSize="@dimen/_14ssp"
+                    android:includeFontPadding="false"
+                    android:text="Prerequisites ?"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnAnswer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:minHeight="@dimen/_50sdp"
+                android:background="@drawable/bg_quiz"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/btnAnswer3"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/textAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:fontFamily="@font/linotte_regular"
+                    android:textSize="@dimen/_14ssp"
+                    android:includeFontPadding="false"
+                    android:text="Prerequisites ?"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+
+                android:visibility="gone"
+                android:clickable="false"
+                android:minHeight="@dimen/_50sdp"
+                android:background="@drawable/bg_continue"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/btnAnswer4"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:fontFamily="@font/linotte_bold"
+                    android:textSize="@dimen/_16ssp"
+                    android:includeFontPadding="false"
+                    android:text="@string/continue_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:clickable="false"
+                android:minHeight="@dimen/_50sdp"
+                android:background="@drawable/bg_finish_inactive"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:padding="@dimen/_10sdp"
+                android:elevation="@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf="@id/btnContinue"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:fontFamily="@font/linotte_bold"
+                    android:textSize="@dimen/_16ssp"
+                    android:includeFontPadding="false"
+                    android:text="@string/finish"
+                    />
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

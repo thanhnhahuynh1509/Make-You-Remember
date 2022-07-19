@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_15sdp"
+    android:background="@color/background"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context=".activities.SettingActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/background_circle_outline_black"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/color_text" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:hint="@string/languages"
+        android:textColorHint="@color/color_text_hint"
+
+        app:startIconDrawable="@drawable/ic_language"
+        app:startIconTint="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/inputLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:fontFamily="@font/linotte_semi_bold"
+            android:textSize="@dimen/_14sdp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_text"
+            android:text="English"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutRemember"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:textColorHint="@color/color_text_hint"
+
+        android:clickable="true"
+        android:focusable="true"
+        app:startIconDrawable="@drawable/ic_remember"
+        app:startIconTint="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutLanguage"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/btnCheckRemember"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:fontFamily="@font/linotte_semi_bold"
+            android:textSize="@dimen/_14sdp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_text"
+            android:text="@string/remember" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutFavorite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:textColorHint="@color/color_text_hint"
+        android:clickable="true"
+        android:focusable="true"
+
+        app:startIconDrawable="@drawable/ic_favorite"
+        app:startIconTint="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutRemember"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/btnFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:fontFamily="@font/linotte_semi_bold"
+            android:textSize="@dimen/_14sdp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_text"
+            android:text="@string/favorite"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTrash"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:textColorHint="@color/color_text_hint"
+        android:clickable="true"
+        android:focusable="true"
+
+        app:startIconDrawable="@drawable/ic_delete"
+        app:startIconTint="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFavorite"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/btnTrash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:fontFamily="@font/linotte_semi_bold"
+            android:textSize="@dimen/_14sdp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_text"
+            android:text="@string/trash"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutAbout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:textColorHint="@color/color_text_hint"
+        android:clickable="true"
+        android:focusable="true"
+
+        app:startIconDrawable="@drawable/ic_question"
+        app:startIconTint="@color/color_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTrash"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:fontFamily="@font/linotte_semi_bold"
+            android:textSize="@dimen/_14sdp"
+            android:includeFontPadding="false"
+            android:textColor="@color/color_text"
+            android:text="@string/about_me"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

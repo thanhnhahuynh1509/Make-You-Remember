@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Make You Remember</string>
+    <string name="search_here">Search here...</string>
+    <string name="it_s_time_to">It\'s time to</string>
+    <string name="key">KEY</string>
+    <string name="value">VALUE</string>
+    <string name="key_here">Key here...</string>
+    <string name="value_here">Value here...</string>
+    <string name="description_here">Description here...</string>
+    <string name="pick_color">Pick color</string>
+    <string name="nothing_here">Nothing here</string>
+    <string name="click_the_green_button">Click the green button</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="are_you_sure_you_want_to_delete_this_note">Are you sure you want to delete this note?</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="key_not_empty">Key is not empty</string>
+    <string name="value_not_empty">Value is not empty</string>
+    <string name="languages">Languages</string>
+    <string name="additional_values">Additional values</string>
+    <string name="add_image">Add Image</string>
+    <string name="trash_note">Delete Note</string>
+    <string name="remember">Remembered</string>
+    <string name="favorite">Favorite</string>
+    <string name="trash">Trash</string>
+    <string name="about_me">About me and this app</string>
+    <string name="you_remembered">YOU REMEMBERED</string>
+    <string name="favorite_title">FAVORITE</string>
+    <string name="trash_title">TRASH</string>
+    <string name="about_me_title">ABOUT ME</string>
+    <string name="about">Hi everyone. I\'m a Java developer working and living in Vietnam (HCM City)</string>
+    <string name="about_this_app">ABOUT THIS APP</string>
+    <string name="about_app_1">This app will make you remember things that you took notes on by using the Quiz System.</string>
+    <string name="about_app_3">. This is my first app I\'ve ever made, and I hope you enjoy and rate it.</string>
+    <string name="about_app2">If you answer incorrectly, you will have to see the advertisement as a punishment or also as a form of support for me :)).</string>
+    <string name="email_thanhnhahuynh1509_gmail_com">Email: thanhnhahuynh1509@gmail.com</string>
+    <string name="question">Question</string>
+    <string name="finish">Finish</string>
+    <string name="continue_text">Continue</string>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+
+</resources>
